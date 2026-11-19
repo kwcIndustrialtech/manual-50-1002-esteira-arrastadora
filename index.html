@@ -1523,25 +1523,13 @@
                 linear-gradient(180deg, rgba(14, 22, 30, 0.72) 0%, rgba(9, 13, 18, 0.35) 48%, rgba(7, 11, 16, 0.78) 100%) !important;
             isolation: isolate;
         }
-        /* Marca d'água: logo KWC + tipografia neon suave */
+        /* Marca d'água: somente texto KWC (sem logo) */
         .main-content::before {
-            content: "" !important;
-            display: block !important;
-            position: fixed !important;
-            top: 0 !important;
-            left: 340px !important;
-            right: 0 !important;
-            bottom: 0 !important;
-            background-image: url('imagens/logo-kwc.png') !important;
-            background-repeat: no-repeat !important;
-            background-position: center 36% !important;
-            background-size: min(40vw, 460px) !important;
-            opacity: 0.085 !important;
-            filter: drop-shadow(0 0 48px rgba(0, 255, 102, 0.22)) brightness(1.15) !important;
-            pointer-events: none !important;
-            z-index: 0 !important;
-            font-size: 0 !important;
-            color: transparent !important;
+            content: none !important;
+            display: none !important;
+            background: none !important;
+            background-image: none !important;
+            opacity: 0 !important;
         }
         .main-content::after {
             content: "KWC" !important;
@@ -1555,17 +1543,17 @@
             justify-content: center !important;
             overflow: hidden !important;
             font-family: var(--font-title) !important;
-            font-size: clamp(5.5rem, 16vw, 13rem) !important;
+            font-size: clamp(6rem, 18vw, 14rem) !important;
             font-weight: 900 !important;
-            letter-spacing: 0.2em !important;
-            color: rgba(0, 255, 102, 0.045) !important;
+            letter-spacing: 0.22em !important;
+            color: rgba(0, 255, 102, 0.055) !important;
             text-shadow:
-                0 0 60px rgba(0, 255, 102, 0.12),
-                0 0 120px rgba(0, 255, 102, 0.06) !important;
+                0 0 70px rgba(0, 255, 102, 0.14),
+                0 0 140px rgba(0, 255, 102, 0.07) !important;
             pointer-events: none !important;
             z-index: 0 !important;
             white-space: nowrap !important;
-            transform: translateY(10%) !important;
+            transform: translateY(8%) !important;
         }
         .manual-ambient {
             position: fixed;
