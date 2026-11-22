@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual Técnico - Esteira Arrastadora 50.1002 - Hunter Engenharia</title>
     <!-- Google Fonts: Orbitron (Industrial/Cyber) e Inter (Leitura Limpa) -->
-    <meta name="theme-color" content="#0d0f12">
+    <meta name="theme-color" content="#03222D">
     <meta name="description" content="Manual técnico digital da Esteira Arrastadora 50.1002 · Hunter Engenharia · Desenvolvido por KWC Industrial TECH">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Manual Técnico — Esteira Arrastadora 50.1002 | Hunter Engenharia">
@@ -16,28 +16,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Presença KWC padrão (igual em todos os manuais) -->
     <script defer src="kwc-presenca.js" data-codigo="50.1002" data-rev="01" data-data="21/11/2026" data-cliente="Hunter Engenharia" data-equipamento="Esteira Arrastadora de Toras"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     
     <style>
         /* --- DESIGN SYSTEM CYBER-INDUSTRIAL --- */
         :root {
-            --bg-body: #0d0f12;          /* Fundo principal carvão metálico */
-            --bg-sidebar: #060709;       /* Barra lateral preto industrial */
-            --bg-card: #13161c;          /* Cards em cinza aço escuro */
-            --accent: #00ff66;           /* Verde Neon / LED brilhante */
-            --accent-dim: #00b347;       /* Verde Neon atenuado */
-            --accent-glow: rgba(0, 255, 102, 0.15);
+            --bg-body: #03222D;          /* Fundo principal carvão metálico */
+            --bg-sidebar: #021A23;       /* Barra lateral preto industrial */
+            --bg-card: #08303F;          /* Cards em cinza aço escuro */
+            --accent: #1FA845;           /* Verde Neon / LED brilhante */
+            --accent-dim: #14823A;       /* Verde Neon atenuado */
+            --accent-glow: rgba(31, 168, 69, 0.15);
             --whatsapp: #25d366;         /* Verde Whatsapp */
-            --text-main: #a9b2c3;        /* Texto cinza claro/prata */
+            --text-main: #A9BEC6;        /* Texto cinza claro/prata */
             --text-white: #ffffff;       /* Texto branco puro */
-            --border: #1f2530;           /* Bordas cinza metálicas */
-            --border-glow: #00ff6633;
+            --border: #0E4556;           /* Bordas cinza metálicas */
+            --border-glow: #1FA84533;
             --danger: #ff3b30;           /* Vermelho emergência */
-            --warning: #ffcc00;          /* Amarelo alerta */
+            --warning: #F0A818;          /* Amarelo alerta */
             --success: #34c759;
-            --gradient-sidebar: linear-gradient(180deg, #060709 0%, #0d0f12 100%);
-            --font-title: 'Orbitron', sans-serif;
+            --gradient-sidebar: linear-gradient(180deg, #021A23 0%, #03222D 100%);
+            --font-title: 'Montserrat', sans-serif;
             --font-body: 'Inter', sans-serif;
         }
 
@@ -58,7 +58,7 @@
             line-height: 1.7;
             /* Grid decorativa de engenharia no fundo */
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(0, 255, 102, 0.02) 0%, transparent 40%),
+                radial-gradient(circle at 10% 20%, rgba(31, 168, 69, 0.02) 0%, transparent 40%),
                 linear-gradient(rgba(255, 255, 255, 0.005) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.005) 1px, transparent 1px);
             background-size: 100% 100%, 30px 30px, 30px 30px;
@@ -95,7 +95,7 @@
             padding: 10px;
             border-radius: 5px; 
             cursor: pointer; 
-            box-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+            box-shadow: 0 0 15px rgba(31, 168, 69, 0.4);
             transition: transform 0.2s, background-color 0.2s;
         }
         .mobile-toggle:active { 
@@ -138,7 +138,7 @@
             padding: 30px 20px 25px;
             border-bottom: 1px solid var(--border);
             text-align: center;
-            background: linear-gradient(180deg, rgba(0, 255, 102, 0.03) 0%, var(--bg-sidebar) 100%);
+            background: linear-gradient(180deg, rgba(31, 168, 69, 0.03) 0%, var(--bg-sidebar) 100%);
         }
 
         .brand-name {
@@ -149,8 +149,8 @@
             letter-spacing: 12px;
             text-transform: uppercase;
             text-shadow: 
-                0 0 20px rgba(0, 255, 102, 0.25),
-                0 0 40px rgba(0, 255, 102, 0.1);
+                0 0 20px rgba(31, 168, 69, 0.25),
+                0 0 40px rgba(31, 168, 69, 0.1);
             margin-bottom: 8px;
             line-height: 1;
             position: relative;
@@ -175,9 +175,9 @@
             margin-top: 14px;
             display: inline-block;
             padding: 4px 14px;
-            border: 1px solid rgba(0, 255, 102, 0.2);
+            border: 1px solid rgba(31, 168, 69, 0.2);
             border-radius: 4px;
-            background: rgba(0, 255, 102, 0.03);
+            background: rgba(31, 168, 69, 0.03);
         }
 
         .brand-code {
@@ -196,7 +196,7 @@
             left: 0;
             width: 340px;
             z-index: 2100;
-            background: rgba(6, 7, 9, 0.92);
+            background: rgba(2, 26, 35, 0.92);
             border-top: 1px solid var(--border);
             padding: 10px 15px;
             text-align: center;
@@ -224,7 +224,7 @@
             align-items: center;
             gap: 6px;
             padding: 5px 12px;
-            background: rgba(6, 7, 9, 0.85);
+            background: rgba(2, 26, 35, 0.85);
             border: 1px solid var(--border);
             border-radius: 4px;
             backdrop-filter: blur(8px);
@@ -270,8 +270,8 @@
         }
         .search-input:focus {
             border-color: var(--accent);
-            background: rgba(0, 255, 102, 0.04);
-            box-shadow: 0 0 15px rgba(0, 255, 102, 0.15);
+            background: rgba(31, 168, 69, 0.04);
+            box-shadow: 0 0 15px rgba(31, 168, 69, 0.15);
         }
         .search-icon {
             position: absolute;
@@ -282,7 +282,7 @@
             pointer-events: none; 
         }
         .highlight-text {
-            background-color: rgba(0, 255, 102, 0.35);
+            background-color: rgba(31, 168, 69, 0.35);
             color: #ffffff;
             border-radius: 2px;
             padding: 0 2px;
@@ -327,10 +327,10 @@
         }
         
         .nav-item:hover, .nav-item.active {
-            background: rgba(0, 255, 102, 0.03); 
+            background: rgba(31, 168, 69, 0.03); 
             color: var(--accent);
             border-left-color: var(--accent);
-            text-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
+            text-shadow: 0 0 10px rgba(31, 168, 69, 0.2);
         }
         .nav-item i { 
             margin-right: 12px; 
@@ -388,7 +388,7 @@
             padding-left: 20px; 
             text-transform: uppercase;
             letter-spacing: 1px;
-            text-shadow: 0 0 15px rgba(0, 255, 102, 0.15);
+            text-shadow: 0 0 15px rgba(31, 168, 69, 0.15);
         }
         h2 { 
             font-family: var(--font-title);
@@ -489,7 +489,7 @@
             opacity: 0; 
             pointer-events: none;
             transition: opacity 0.3s ease; 
-            border-top: 1px solid rgba(0, 255, 102, 0.2);
+            border-top: 1px solid rgba(31, 168, 69, 0.2);
         }
         .img-wrapper:hover .zoom-hint { 
             opacity: 1; 
@@ -507,9 +507,9 @@
             margin: -25px auto 25px;
             max-width: 600px;
             padding: 6px 14px;
-            border: 1px solid rgba(0, 255, 102, 0.2);
+            border: 1px solid rgba(31, 168, 69, 0.2);
             border-radius: 4px;
-            background: rgba(0, 255, 102, 0.03);
+            background: rgba(31, 168, 69, 0.03);
             display: block;
         }
         #vista3d .figure-caption {
@@ -550,7 +550,7 @@
             font-size: 0.85rem;
             letter-spacing: 1.5px;
             pointer-events: none;
-            background: rgba(6, 7, 9, 0.4);
+            background: rgba(2, 26, 35, 0.4);
             z-index: 2;
         }
         .viewer3d-overlay.hidden { display: none; }
@@ -570,7 +570,7 @@
             bottom: 12px;
             right: 12px;
             z-index: 4;
-            background: rgba(6, 7, 9, 0.85);
+            background: rgba(2, 26, 35, 0.85);
             border: 1px solid var(--border);
             color: var(--text-main);
             width: 38px;
@@ -596,7 +596,7 @@
             gap: 8px;
         }
         .viewer3d-tools button {
-            background: rgba(6, 7, 9, 0.85);
+            background: rgba(2, 26, 35, 0.85);
             border: 1px solid var(--border);
             color: var(--text-main);
             width: 38px;
@@ -616,7 +616,7 @@
         .viewer3d-tools button.active {
             color: var(--accent);
             border-color: var(--accent);
-            background: rgba(0, 255, 102, 0.08);
+            background: rgba(31, 168, 69, 0.08);
         }
         .viewer3d-selbar {
             position: absolute;
@@ -627,7 +627,7 @@
             display: none;
             align-items: center;
             gap: 8px;
-            background: rgba(6, 7, 9, 0.92);
+            background: rgba(2, 26, 35, 0.92);
             border: 1px solid var(--accent);
             border-radius: 6px;
             padding: 6px 10px;
@@ -669,7 +669,7 @@
             display: none;
             align-items: center;
             gap: 6px;
-            background: rgba(6, 7, 9, 0.92);
+            background: rgba(2, 26, 35, 0.92);
             border: 1px solid var(--warning);
             color: var(--warning);
             font-family: inherit;
@@ -705,7 +705,7 @@
             right: 12px;
             width: 280px;
             max-height: calc(100% - 78px);
-            background: rgba(6, 7, 9, 0.95);
+            background: rgba(2, 26, 35, 0.95);
             border: 1px solid var(--border);
             border-radius: 8px;
             backdrop-filter: blur(8px);
@@ -722,7 +722,7 @@
             justify-content: space-between;
             padding: 12px 14px;
             border-bottom: 1px solid var(--border);
-            background: linear-gradient(90deg, rgba(0, 255, 102, 0.06), transparent);
+            background: linear-gradient(90deg, rgba(31, 168, 69, 0.06), transparent);
         }
         .viewer3d-panel-head span {
             font-family: var(--font-title);
@@ -786,7 +786,7 @@
         .v3d-panel-actions button:hover {
             border-color: var(--accent);
             color: var(--accent);
-            background: rgba(0, 255, 102, 0.05);
+            background: rgba(31, 168, 69, 0.05);
         }
         .v3d-panel-actions button:disabled {
             opacity: 0.35;
@@ -835,7 +835,7 @@
             color: var(--accent);
             transition: all 0.15s;
         }
-        .v3d-part-row:hover { background: rgba(0, 255, 102, 0.05); border-color: var(--border); }
+        .v3d-part-row:hover { background: rgba(31, 168, 69, 0.05); border-color: var(--border); }
         .v3d-part-row.hidden-part { opacity: 0.45; }
         .v3d-part-row.hidden-part .v3d-eye {
             border-color: var(--danger);
@@ -844,7 +844,7 @@
         }
         .v3d-part-row.selected {
             border-color: var(--accent);
-            background: rgba(0, 255, 102, 0.08);
+            background: rgba(31, 168, 69, 0.08);
             color: var(--text-white);
         }
         .v3d-part-name {
@@ -854,7 +854,7 @@
         }
         .v3d-rename-input {
             width: 100%;
-            background: #0d0f12;
+            background: #03222D;
             border: 1px solid var(--accent);
             color: var(--text-white);
             font-family: inherit;
@@ -924,7 +924,7 @@
             vertical-align: middle; 
         }
         th { 
-            background: #090b0f; 
+            background: #062734; 
             color: var(--accent); 
             text-transform: uppercase; 
             font-size: 0.75rem; 
@@ -934,7 +934,7 @@
             border-bottom: 2px solid var(--border);
         }
         tr:hover { 
-            background: rgba(0, 255, 102, 0.01); 
+            background: rgba(31, 168, 69, 0.01); 
         }
         tr:last-child td {
             border-bottom: none;
@@ -986,10 +986,10 @@
             font-family: var(--font-title);
         }
         .accordion:hover, .accordion.active { 
-            background-color: rgba(0, 255, 102, 0.03); 
+            background-color: rgba(31, 168, 69, 0.03); 
             color: var(--accent); 
             border-color: var(--accent);
-            box-shadow: 0 0 10px rgba(0, 255, 102, 0.05);
+            box-shadow: 0 0 10px rgba(31, 168, 69, 0.05);
         }
         .accordion i { 
             transition: transform 0.3s; 
@@ -1142,7 +1142,7 @@
             max-width: 90%; 
             max-height: 85%; 
             border: 1px solid var(--border); 
-            box-shadow: 0 0 50px rgba(0, 255, 102, 0.1); 
+            box-shadow: 0 0 50px rgba(31, 168, 69, 0.1); 
             border-radius: 4px;
         }
         #lightbox-close { 
@@ -1444,13 +1444,13 @@
             height: auto;
             margin: 8px auto 12px;
             display: block;
-            filter: drop-shadow(0 0 18px rgba(0,255,102,0.22));
+            filter: drop-shadow(0 0 18px rgba(31,168,69,0.22));
         }
         .brand-name { display: none !important; }
         .brand {
             padding: 18px 16px 8px !important;
             text-align: center;
-            border-bottom: 1px solid rgba(0,255,102,0.12);
+            border-bottom: 1px solid rgba(31,168,69,0.12);
         }
         .brand-subtitle {
             opacity: 0.75;
@@ -1462,17 +1462,17 @@
             display: inline-block;
             margin-top: 8px;
             padding: 4px 12px;
-            border: 1px solid rgba(0,255,102,0.35);
+            border: 1px solid rgba(31,168,69,0.35);
             border-radius: 999px;
-            color: var(--accent, #00ff66) !important;
+            color: var(--accent, #1FA845) !important;
             font-size: 0.78rem !important;
             letter-spacing: 1px;
         }
         .sidebar {
             display: flex !important;
             flex-direction: column;
-            background: linear-gradient(180deg, rgba(8,12,18,0.98), rgba(6,8,12,0.98)) !important;
-            border-right: 1px solid rgba(0,255,102,0.14) !important;
+            background: linear-gradient(180deg, rgba(2,26,35,0.98), rgba(2,26,35,0.98)) !important;
+            border-right: 1px solid rgba(31,168,69,0.14) !important;
             box-shadow: 8px 0 28px rgba(0,0,0,0.25);
         }
         .nav-scroll {
@@ -1494,13 +1494,13 @@
             border: 1px solid transparent !important;
         }
         .nav-item:hover {
-            background: rgba(0,255,102,0.08) !important;
-            border-color: rgba(0,255,102,0.18) !important;
+            background: rgba(31,168,69,0.08) !important;
+            border-color: rgba(31,168,69,0.18) !important;
             transform: translateX(2px);
         }
         .nav-item.active {
-            background: rgba(0,255,102,0.12) !important;
-            border-color: rgba(0,255,102,0.28) !important;
+            background: rgba(31,168,69,0.12) !important;
+            border-color: rgba(31,168,69,0.28) !important;
         }
         @keyframes ambientPulse {
             0%, 100% { opacity: 0.55; transform: scale(1); }
@@ -1515,23 +1515,23 @@
             100% { transform: translateX(220%) skewX(-12deg); }
         }
         body {
-            background-color: #070b10 !important;
+            background-color: #021A23 !important;
             background-image:
-                radial-gradient(ellipse 95% 55% at 78% -8%, rgba(0, 255, 102, 0.14), transparent 58%),
+                radial-gradient(ellipse 95% 55% at 78% -8%, rgba(31, 168, 69, 0.14), transparent 58%),
                 radial-gradient(ellipse 60% 45% at -8% 90%, rgba(55, 100, 170, 0.16), transparent 52%),
-                radial-gradient(ellipse 40% 30% at 45% 55%, rgba(0, 255, 102, 0.035), transparent 62%),
+                radial-gradient(ellipse 40% 30% at 45% 55%, rgba(31, 168, 69, 0.035), transparent 62%),
                 linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
-                linear-gradient(180deg, #101823 0%, #070b10 100%) !important;
+                linear-gradient(180deg, #08303F 0%, #021A23 100%) !important;
             background-size: auto, auto, auto, 34px 34px, 34px 34px, auto !important;
         }
         .main-content {
             background-color: transparent !important;
             background-image:
-                radial-gradient(ellipse 70% 42% at 88% 0%, rgba(0, 255, 102, 0.11), transparent 56%),
+                radial-gradient(ellipse 70% 42% at 88% 0%, rgba(31, 168, 69, 0.11), transparent 56%),
                 radial-gradient(ellipse 48% 36% at 8% 95%, rgba(70, 120, 190, 0.12), transparent 52%),
-                radial-gradient(circle at 50% 38%, rgba(0, 255, 102, 0.03), transparent 48%),
-                linear-gradient(180deg, rgba(14, 22, 30, 0.72) 0%, rgba(9, 13, 18, 0.35) 48%, rgba(7, 11, 16, 0.78) 100%) !important;
+                radial-gradient(circle at 50% 38%, rgba(31, 168, 69, 0.03), transparent 48%),
+                linear-gradient(180deg, rgba(14, 22, 30, 0.72) 0%, rgba(3, 30, 40, 0.35) 48%, rgba(2, 26, 35, 0.78) 100%) !important;
             isolation: isolate;
         }
         /* Marca d'água: somente texto KWC (sem logo) */
@@ -1557,10 +1557,10 @@
             font-size: clamp(6rem, 18vw, 14rem) !important;
             font-weight: 900 !important;
             letter-spacing: 0.22em !important;
-            color: rgba(0, 255, 102, 0.055) !important;
+            color: rgba(31, 168, 69, 0.055) !important;
             text-shadow:
-                0 0 70px rgba(0, 255, 102, 0.14),
-                0 0 140px rgba(0, 255, 102, 0.07) !important;
+                0 0 70px rgba(31, 168, 69, 0.14),
+                0 0 140px rgba(31, 168, 69, 0.07) !important;
             pointer-events: none !important;
             z-index: 0 !important;
             white-space: nowrap !important;
@@ -1587,7 +1587,7 @@
             height: min(42vw, 420px);
             top: 8%;
             right: 6%;
-            background: radial-gradient(circle, rgba(0, 255, 102, 0.22) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(31, 168, 69, 0.22) 0%, transparent 70%);
         }
         .ambient-orb.orb-b {
             width: min(36vw, 360px);
@@ -1602,7 +1602,7 @@
             height: min(28vw, 280px);
             top: 48%;
             left: 42%;
-            background: radial-gradient(circle, rgba(0, 255, 102, 0.1) 0%, transparent 68%);
+            background: radial-gradient(circle, rgba(31, 168, 69, 0.1) 0%, transparent 68%);
             animation-delay: -7s, -6s;
         }
         .ambient-ring {
@@ -1612,17 +1612,17 @@
             width: min(58vw, 640px);
             height: min(58vw, 640px);
             transform: translate(-50%, -42%);
-            border: 1px solid rgba(0, 255, 102, 0.07);
+            border: 1px solid rgba(31, 168, 69, 0.07);
             border-radius: 50%;
             box-shadow:
-                0 0 40px rgba(0, 255, 102, 0.04) inset,
-                0 0 80px rgba(0, 255, 102, 0.03);
+                0 0 40px rgba(31, 168, 69, 0.04) inset,
+                0 0 80px rgba(31, 168, 69, 0.03);
         }
         .ambient-ring::before {
             content: '';
             position: absolute;
             inset: 12%;
-            border: 1px dashed rgba(0, 255, 102, 0.05);
+            border: 1px dashed rgba(31, 168, 69, 0.05);
             border-radius: 50%;
         }
         .container section,
@@ -1640,8 +1640,8 @@
         .diag-item {
             position: relative;
             background:
-                linear-gradient(165deg, rgba(24, 34, 44, 0.9), rgba(12, 17, 24, 0.84)) !important;
-            border: 1px solid rgba(0, 255, 102, 0.16) !important;
+                linear-gradient(165deg, rgba(8, 48, 63, 0.9), rgba(3, 34, 45, 0.84)) !important;
+            border: 1px solid rgba(31, 168, 69, 0.16) !important;
             box-shadow:
                 0 12px 30px rgba(0, 0, 0, 0.32),
                 inset 0 1px 0 rgba(255, 255, 255, 0.05);
@@ -1650,9 +1650,9 @@
         }
         .data-card::before {
             width: 3px !important;
-            background: linear-gradient(180deg, #00ff66, rgba(0, 255, 102, 0.05)) !important;
+            background: linear-gradient(180deg, #1FA845, rgba(31, 168, 69, 0.05)) !important;
             opacity: 1 !important;
-            box-shadow: 0 0 14px rgba(0, 255, 102, 0.55);
+            box-shadow: 0 0 14px rgba(31, 168, 69, 0.55);
         }
         .component-box::after,
         .data-card::after,
@@ -1666,7 +1666,7 @@
             background: linear-gradient(
                 105deg,
                 transparent 0%,
-                rgba(0, 255, 102, 0.08) 48%,
+                rgba(31, 168, 69, 0.08) 48%,
                 transparent 100%
             );
             transform: translateX(-140%) skewX(-14deg);
@@ -1677,10 +1677,10 @@
         .data-card:hover,
         .diagram-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(0, 255, 102, 0.48) !important;
+            border-color: rgba(31, 168, 69, 0.48) !important;
             box-shadow:
                 0 18px 40px rgba(0, 0, 0, 0.4),
-                0 0 28px rgba(0, 255, 102, 0.14),
+                0 0 28px rgba(31, 168, 69, 0.14),
                 inset 0 1px 0 rgba(255, 255, 255, 0.07);
         }
         .component-box:hover::after,
@@ -1692,12 +1692,12 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         }
         .diag-item:hover {
-            border-color: rgba(0, 255, 102, 0.35) !important;
-            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28), 0 0 18px rgba(0, 255, 102, 0.08);
+            border-color: rgba(31, 168, 69, 0.35) !important;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28), 0 0 18px rgba(31, 168, 69, 0.08);
         }
         .diag-item.open {
-            border-color: rgba(0, 255, 102, 0.42) !important;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32), 0 0 22px rgba(0, 255, 102, 0.12);
+            border-color: rgba(31, 168, 69, 0.42) !important;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32), 0 0 22px rgba(31, 168, 69, 0.12);
         }
         .search-container {
             margin: 14px 14px 10px !important;
@@ -1710,9 +1710,9 @@
             width: 100% !important;
             padding: 12px 14px 12px 42px !important;
             background: rgba(255,255,255,0.04) !important;
-            border: 1px solid rgba(0,255,102,0.22) !important;
+            border: 1px solid rgba(31,168,69,0.22) !important;
             border-radius: 12px !important;
-            color: #f2fff6 !important;
+            color: #EAF6F8 !important;
             font-size: 0.86rem !important;
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 6px 16px rgba(0,0,0,0.18);
             transition: border-color .2s, box-shadow .2s, background .2s;
@@ -1721,22 +1721,22 @@
             color: rgba(210, 230, 220, 0.45) !important;
         }
         .search-input:focus {
-            border-color: rgba(0,255,102,0.55) !important;
-            background: rgba(0,255,102,0.06) !important;
-            box-shadow: 0 0 0 3px rgba(0,255,102,0.12), 0 8px 18px rgba(0,0,0,0.22) !important;
+            border-color: rgba(31,168,69,0.55) !important;
+            background: rgba(31,168,69,0.06) !important;
+            box-shadow: 0 0 0 3px rgba(31,168,69,0.12), 0 8px 18px rgba(0,0,0,0.22) !important;
         }
         .search-icon {
             left: 14px !important;
             top: 50% !important;
             transform: translateY(-50%);
-            color: rgba(0,255,102,0.75) !important;
+            color: rgba(31,168,69,0.75) !important;
             font-size: 1.05rem !important;
             z-index: 2;
         }
         .sidebar-kwc {
             margin-top: auto;
             padding: 16px 14px 20px;
-            border-top: 1px solid rgba(0,255,102,0.14);
+            border-top: 1px solid rgba(31,168,69,0.14);
             text-align: center;
             background: rgba(0,0,0,0.18);
         }
@@ -1746,7 +1746,7 @@
             display: block;
             margin: 0 auto;
             opacity: 0.95;
-            filter: drop-shadow(0 0 10px rgba(0,255,102,0.12));
+            filter: drop-shadow(0 0 10px rgba(31,168,69,0.12));
         }
         .fixed-footer {
             display: flex !important;
@@ -1762,17 +1762,17 @@
             z-index: 9999 !important;
             pointer-events: none;
             padding: 12px 18px;
-            background: rgba(8, 12, 18, 0.94) !important;
-            border-top: 1px solid rgba(0, 255, 102, 0.28);
+            background: rgba(2, 26, 35, 0.94) !important;
+            border-top: 1px solid rgba(31, 168, 69, 0.28);
             backdrop-filter: blur(10px);
         }
         .fixed-footer-text {
             font-size: 0.92rem !important;
             letter-spacing: 0.6px;
-            color: #e8ffe8 !important;
+            color: #EAF2F4 !important;
             text-transform: none !important;
         }
-        .fixed-footer-text strong { color: var(--accent, #00ff66) !important; }
+        .fixed-footer-text strong { color: var(--accent, #1FA845) !important; }
         .main-content, .container { padding-bottom: 70px !important; }
         .img-size-70 {
             max-width: 70%;
@@ -1791,9 +1791,9 @@
         }
         .diag-list { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
         .diag-item {
-            border: 1px solid rgba(0, 255, 102, 0.18) !important;
+            border: 1px solid rgba(31, 168, 69, 0.18) !important;
             border-radius: 12px;
-            background: linear-gradient(165deg, rgba(24, 34, 44, 0.92), rgba(12, 17, 24, 0.86)) !important;
+            background: linear-gradient(165deg, rgba(8, 48, 63, 0.92), rgba(3, 34, 45, 0.86)) !important;
             overflow: hidden;
             box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.04);
         }
@@ -1811,14 +1811,14 @@
             text-align: left;
             font: inherit;
         }
-        .diag-toggle:hover { background: rgba(0,255,102,0.06); }
+        .diag-toggle:hover { background: rgba(31,168,69,0.06); }
         .diag-title {
             display: flex;
             align-items: center;
             gap: 10px;
             font-weight: 600;
         }
-        .diag-title .material-icons-round { color: var(--accent, #00ff66); font-size: 1.15rem; }
+        .diag-title .material-icons-round { color: var(--accent, #1FA845); font-size: 1.15rem; }
         .diag-expand {
             display: inline-flex;
             align-items: center;
@@ -1826,8 +1826,8 @@
             white-space: nowrap;
             font-size: 0.78rem;
             letter-spacing: 0.4px;
-            color: var(--accent, #00ff66);
-            border: 1px solid rgba(0,255,102,0.3);
+            color: var(--accent, #1FA845);
+            border: 1px solid rgba(31,168,69,0.3);
             border-radius: 999px;
             padding: 5px 10px;
         }
@@ -1839,7 +1839,7 @@
         }
         .diag-item.open .diag-body { display: block; }
         .diag-item.open .diag-expand .material-icons-round { transform: rotate(180deg); }
-        .diag-item.open .diag-expand { background: rgba(0,255,102,0.1); }
+        .diag-item.open .diag-expand { background: rgba(31,168,69,0.1); }
         @media (max-width: 900px) {
             .fixed-footer { left: 0 !important; }
             .main-content::before,
@@ -1847,6 +1847,12 @@
             .manual-ambient { left: 0 !important; }
             .img-size-70, .img-size-60 { max-width: 92%; }
         }
+        /* identidade Hunter v2: petróleo + verde máquina + âmbar (logo) */
+        .brand-code, .nav-divider { color: #F0A818 !important; border-color: rgba(240,168,24,.45) !important; }
+        h2 i { color: #F0A818 !important; }
+        h1.page-title { letter-spacing: 0 !important; }
+        h1.page-title, h2 { font-weight: 800 !important; }
+        .brand-subtitle { color: #EAF2F4 !important; }
         /* desempenho: menos pintura contínua */
         .ambient-orb { animation: none !important; will-change: auto; }
         .fixed-footer, .kwc-watermark { display: none !important; }
@@ -1875,7 +1881,7 @@
 
     <nav class="sidebar">
         <div class="brand">
-            <img class="brand-logo" src="imagens/logo-hunter.png" alt="Hunter Engenharia">
+            <img class="brand-logo" src="imagens/logo-hunter-cores.webp" alt="Hunter Engenharia">
             <div class="brand-subtitle">Manual Técnico Digital</div>
             <div class="brand-code">50.1002</div>
         </div>
@@ -2450,7 +2456,7 @@
                 <h2><i class="material-icons-round">qr_code_2</i> Manual Digital — QR Code</h2>
                 <p style="max-width: 520px; margin: 0 auto 22px;">Escaneie o QR Code para abrir este manual no celular ou compartilhar o acesso.</p>
                 <div style="display:inline-block; padding: 8px;">
-                    <img src="imagens/qr-manual-kwc.png" alt="QR Code Manual Digital KWC 50.1002" style="width: min(320px, 85vw); height: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,255,102,0.12);">
+                    <img src="imagens/qr-manual-kwc.png" alt="QR Code Manual Digital KWC 50.1002" style="width: min(320px, 85vw); height: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(31,168,69,0.12);">
                 </div>
                 <p style="margin-top: 14px; font-size: 0.85rem; opacity: 0.8;">
                     <a href="https://kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora/" target="_blank" style="color: var(--accent);">kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora</a>
