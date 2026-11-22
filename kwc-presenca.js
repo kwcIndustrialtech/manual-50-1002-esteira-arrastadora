@@ -1,4 +1,4 @@
-/*! KWC Industrial TECH · Presença padrão nos manuais digitais · v1.1
+/*! KWC Industrial TECH · Presença padrão nos manuais digitais · v1.2
  *  O mesmo bloco KWC em todo manual, qualquer que seja a identidade do cliente.
  *  Uso: copie este arquivo ao lado do index.html e, no <head> do manual:
  *  <script defer src="kwc-presenca.js"
@@ -35,7 +35,7 @@
     '.kwcp-sig small b{color:#39FF6A;letter-spacing:.08em;margin-left:6px}',
     '.kwcp-site{white-space:nowrap;color:#39FF6A!important;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.1em}',
     '.kwcp-site:hover{text-decoration:underline!important}',
-    'body{padding-bottom:46px!important}',
+    'html.kwcp-pad body{padding-bottom:46px!important}',
     '#backToTop{bottom:62px!important}',
     /* selo da capa */
     '.kwcp-selo{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:14px 0 26px;padding:10px 14px;border-radius:10px;background:rgba(10,10,10,.55);border:1px solid rgba(57,255,106,.35);border-left:3px solid #39FF6A;color:#E8EAED;font-size:12px;text-transform:uppercase;letter-spacing:.1em;max-width:100%}',
@@ -59,7 +59,7 @@
     '.kwcp-print{display:none}',
     '@media print{.kwcp-sig{display:none!important}.kwcp-print{display:flex;position:fixed;left:0;right:0;bottom:0;justify-content:space-between;padding:4px 10mm;font-size:9px;color:#333;border-top:1px solid #39FF6A;background:#fff}.kwcp-print b{color:#16A34A}.kwcp-ficha,.kwcp-selo{break-inside:avoid}}',
     /* celular */
-    '@media (max-width:768px){.kwcp-fg{grid-template-columns:repeat(2,1fr)}.kwcp-sig{height:42px;padding:0 12px}.kwcp-sig small{display:none}.kwcp-sig img{height:20px}.kwcp-site{font-size:11px}body{padding-bottom:42px!important}#backToTop{bottom:56px!important}.kwcp-fg div,.kwcp-fh,.kwcp-ff{padding-left:16px;padding-right:16px}}'
+    '@media (max-width:768px){.kwcp-fg{grid-template-columns:repeat(2,1fr)}.kwcp-sig{height:42px;padding:0 12px}.kwcp-sig small{display:none}.kwcp-sig img{height:20px}.kwcp-site{font-size:11px}html.kwcp-pad body{padding-bottom:42px!important}#backToTop{bottom:56px!important}.kwcp-fg div,.kwcp-fh,.kwcp-ff{padding-left:16px;padding-right:16px}}'
   ].join('');
 
   function el(h) { var d = document.createElement('div'); d.innerHTML = h; return d.firstChild; }
@@ -78,6 +78,25 @@
     document.body.appendChild(el('<div class="kwcp kwcp-sig" role="contentinfo">' +
       '<a href="' + KWC.site + '" target="_blank" rel="noopener" title="' + KWC.nome + '"><img src="' + KWC.logo + '" alt="' + KWC.nome + '" width="78" height="24"><small><span>Desenvolvido por</span><b>' + KWC.nome + '</b></small></a>' +
       '<a class="kwcp-site" href="' + KWC.site + '" target="_blank" rel="noopener">kwcindustrial.tech ›</a></div>'));
+    // a barra fica só na área do manual: começa onde o menu lateral termina
+    var barra = document.querySelector('.kwcp-sig');
+    var menu = document.querySelector('.sidebar, nav.sidebar, aside.sidebar, [data-kwc-menu]');
+    function alinhar() {
+      var esq = 0;
+      if (menu) {
+        var r = menu.getBoundingClientRect(), cs = getComputedStyle(menu);
+        var fixo = cs.position === 'fixed' || cs.position === 'sticky' || r.height >= innerHeight * 0.9;
+        if (fixo && r.left <= 1 && r.right > 0 && r.width < innerWidth * 0.6 && cs.display !== 'none' && cs.visibility !== 'hidden') esq = Math.round(r.right);
+      }
+      barra.style.left = esq + 'px';
+    }
+    if (!menu) document.documentElement.classList.add('kwcp-pad');
+    alinhar();
+    addEventListener('resize', alinhar, { passive: true });
+    if (menu) {
+      if (window.MutationObserver) new MutationObserver(function () { setTimeout(alinhar, 320); alinhar(); }).observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+      menu.addEventListener('transitionend', alinhar);
+    }
 
     // 2. Selo de autoria na capa
     var selo = '<div class="kwcp kwcp-selo"><img src="' + KWC.logo + '" alt="KWC" width="71" height="22">' +
