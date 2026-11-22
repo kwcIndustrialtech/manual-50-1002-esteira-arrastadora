@@ -1,4 +1,4 @@
-/*! KWC Industrial TECH · Presença padrão nos manuais digitais · v1.0
+/*! KWC Industrial TECH · Presença padrão nos manuais digitais · v1.1
  *  O mesmo bloco KWC em todo manual, qualquer que seja a identidade do cliente.
  *  Uso: copie este arquivo ao lado do index.html e, no <head> do manual:
  *  <script defer src="kwc-presenca.js"
@@ -28,15 +28,15 @@
     '.kwcp,.kwcp *{box-sizing:border-box;font-family:"Chakra Petch","Bahnschrift","Segoe UI",system-ui,sans-serif;letter-spacing:.02em}',
     '.kwcp-g{color:#39FF6A}',
     /* assinatura fixa */
-    '.kwcp-sig{position:fixed;right:16px;bottom:14px;z-index:2147483000;display:flex;align-items:center;gap:10px;padding:7px 8px 7px 14px;border-radius:999px;background:rgba(10,10,10,.94);border:1px solid rgba(57,255,106,.45);box-shadow:0 10px 28px -10px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.03) inset;color:#E8EAED;text-decoration:none}',
-    '.kwcp-sig a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:10px}',
+    '.kwcp-sig{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;display:flex;align-items:center;justify-content:space-between;gap:16px;height:46px;padding:0 22px;background:rgba(10,10,10,.97);border-top:1px solid rgba(57,255,106,.45);box-shadow:0 -8px 24px -12px rgba(0,0,0,.7);color:#E8EAED}',
+    '.kwcp-sig a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:12px}',
     '.kwcp-sig img{height:24px;width:auto;display:block}',
-    '.kwcp-sig small{font-size:10px;line-height:1.15;text-transform:uppercase;color:#A7AEB9;letter-spacing:.14em}',
-    '.kwcp-sig small b{display:block;color:#39FF6A;font-size:11px;letter-spacing:.08em}',
-    '.kwcp-zap{display:inline-flex!important;align-items:center;gap:6px;height:34px;padding:0 14px;border-radius:999px;background:#39FF6A;color:#04150A!important;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;transition:transform .15s}',
-    '.kwcp-zap:hover{transform:translateY(-1px)}',
-    '.kwcp-zap svg{width:16px;height:16px}',
-    '#backToTop{bottom:74px!important}',
+    '.kwcp-sig small{white-space:nowrap;font-size:11px;text-transform:uppercase;color:#A7AEB9;letter-spacing:.14em}',
+    '.kwcp-sig small b{color:#39FF6A;letter-spacing:.08em;margin-left:6px}',
+    '.kwcp-site{white-space:nowrap;color:#39FF6A!important;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.1em}',
+    '.kwcp-site:hover{text-decoration:underline!important}',
+    'body{padding-bottom:46px!important}',
+    '#backToTop{bottom:62px!important}',
     /* selo da capa */
     '.kwcp-selo{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:14px 0 26px;padding:10px 14px;border-radius:10px;background:rgba(10,10,10,.55);border:1px solid rgba(57,255,106,.35);border-left:3px solid #39FF6A;color:#E8EAED;font-size:12px;text-transform:uppercase;letter-spacing:.1em;max-width:100%}',
     '.kwcp-selo img{height:22px;width:auto}',
@@ -52,14 +52,14 @@
     '.kwcp-fg div{background:#0D0D0D;padding:14px 22px}',
     '.kwcp-fg small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#5F6771;margin-bottom:4px}',
     '.kwcp-fg b{font-size:14px;color:#E8EAED;font-weight:600;word-break:break-word}',
-    '.kwcp-fg b.kwcp-g,.kwcp-fg b a{color:#39FF6A}',
+    '.kwcp-fg b.kwcp-g,.kwcp-fg b a{color:#39FF6A!important}',
     '.kwcp-ff{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px;font-size:12px;color:#A7AEB9}',
-    '.kwcp-ff a{color:#39FF6A;text-decoration:none;font-weight:700}',
+    '.kwcp-ff a{color:#39FF6A!important;text-decoration:none;font-weight:700}',
     /* impressão */
     '.kwcp-print{display:none}',
     '@media print{.kwcp-sig{display:none!important}.kwcp-print{display:flex;position:fixed;left:0;right:0;bottom:0;justify-content:space-between;padding:4px 10mm;font-size:9px;color:#333;border-top:1px solid #39FF6A;background:#fff}.kwcp-print b{color:#16A34A}.kwcp-ficha,.kwcp-selo{break-inside:avoid}}',
     /* celular */
-    '@media (max-width:768px){.kwcp-fg{grid-template-columns:repeat(2,1fr)}.kwcp-sig{right:10px;bottom:10px;padding:5px 5px 5px 10px;gap:8px}.kwcp-sig small{display:none}.kwcp-sig img{height:20px}.kwcp-zap{height:30px;padding:0 11px;font-size:11px}#backToTop{bottom:62px!important}.kwcp-fg div,.kwcp-fh,.kwcp-ff{padding-left:16px;padding-right:16px}}'
+    '@media (max-width:768px){.kwcp-fg{grid-template-columns:repeat(2,1fr)}.kwcp-sig{height:42px;padding:0 12px}.kwcp-sig small{display:none}.kwcp-sig img{height:20px}.kwcp-site{font-size:11px}body{padding-bottom:42px!important}#backToTop{bottom:56px!important}.kwcp-fg div,.kwcp-fh,.kwcp-ff{padding-left:16px;padding-right:16px}}'
   ].join('');
 
   function el(h) { var d = document.createElement('div'); d.innerHTML = h; return d.firstChild; }
@@ -74,10 +74,10 @@
     }
     var st = document.createElement('style'); st.id = 'kwc-presenca-css'; st.textContent = css; document.head.appendChild(st);
 
-    // 1. Assinatura fixa + suporte técnico
+    // 1. Barra inferior fixa (largura total) com link do site KWC
     document.body.appendChild(el('<div class="kwcp kwcp-sig" role="contentinfo">' +
-      '<a href="' + KWC.site + '" target="_blank" rel="noopener" title="' + KWC.nome + '"><img src="' + KWC.logo + '" alt="' + KWC.nome + '" width="78" height="24"><small>Desenvolvido por<b>' + KWC.nome + '</b></small></a>' +
-      '<a class="kwcp-zap" href="' + ZAP + '" target="_blank" rel="noopener" title="Suporte técnico KWC no WhatsApp">' + ICO_ZAP + 'Suporte</a></div>'));
+      '<a href="' + KWC.site + '" target="_blank" rel="noopener" title="' + KWC.nome + '"><img src="' + KWC.logo + '" alt="' + KWC.nome + '" width="78" height="24"><small><span>Desenvolvido por</span><b>' + KWC.nome + '</b></small></a>' +
+      '<a class="kwcp-site" href="' + KWC.site + '" target="_blank" rel="noopener">kwcindustrial.tech ›</a></div>'));
 
     // 2. Selo de autoria na capa
     var selo = '<div class="kwcp kwcp-selo"><img src="' + KWC.logo + '" alt="KWC" width="71" height="22">' +
@@ -96,7 +96,7 @@
       (cod ? '<div><small>Código KWC</small><b class="kwcp-g">' + cod + '</b></div>' : '') +
       '<div><small>Revisão</small><b>' + rev + (dt ? ' · ' + dt : '') + '</b></div>' +
       '<div><small>Responsável técnico</small><b>' + KWC.resp + '</b></div>' +
-      '<div><small>Contato</small><b><a class="kwcp-g" style="text-decoration:none" href="' + ZAP + '" target="_blank" rel="noopener">' + KWC.zapTxt + '</a></b></div>' +
+      '<div><small>Site</small><b><a class="kwcp-g" style="text-decoration:none" href="' + KWC.site + '" target="_blank" rel="noopener">kwcindustrial.tech</a></b></div>' +
       '</div><div class="kwcp-ff"><span>Projeto, documentação e manual digital por <b class="kwcp-g">' + KWC.nome + '</b>' + (url ? ' · versão online: ' + url.replace(/^https?:\/\//, '') : '') + '</span>' +
       '<a href="' + KWC.site + '" target="_blank" rel="noopener">kwcindustrial.tech ›</a></div></section>';
     var pf = document.querySelector('[data-kwc-ficha]');
