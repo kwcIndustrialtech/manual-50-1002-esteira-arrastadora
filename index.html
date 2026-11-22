@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual Técnico - Esteira Arrastadora 50.1002 - Hunter Engenharia</title>
     <!-- Google Fonts: Orbitron (Industrial/Cyber) e Inter (Leitura Limpa) -->
+    <meta name="theme-color" content="#0d0f12">
+    <meta name="description" content="Manual técnico digital da Esteira Arrastadora 50.1002 · Hunter Engenharia · Desenvolvido por KWC Industrial TECH">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Manual Técnico — Esteira Arrastadora 50.1002 | Hunter Engenharia">
+    <meta property="og:description" content="Manual digital Hunter Engenharia · Desenvolvido por KWC Industrial TECH">
+    <meta property="og:image" content="https://kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora/imagens/Transportador%20Industrial%20Verde%20HUNTER.webp">
+    <meta property="og:url" content="https://kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Presença KWC padrão (igual em todos os manuais) -->
+    <script defer src="kwc-presenca.js" data-codigo="50.1002" data-rev="01" data-data="21/11/2026" data-cliente="Hunter Engenharia" data-equipamento="Esteira Arrastadora de Toras"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     
@@ -1532,7 +1543,7 @@
             opacity: 0 !important;
         }
         .main-content::after {
-            content: "KWC" !important;
+            content: "HUNTER" !important;
             position: fixed !important;
             top: 0 !important;
             left: 340px !important;
@@ -1836,6 +1847,12 @@
             .manual-ambient { left: 0 !important; }
             .img-size-70, .img-size-60 { max-width: 92%; }
         }
+        /* desempenho: menos pintura contínua */
+        .ambient-orb { animation: none !important; will-change: auto; }
+        .fixed-footer, .kwc-watermark { display: none !important; }
+        section { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+        section#capa { content-visibility: visible; }
+        @media (max-width: 768px) { [style*="backdrop-filter"], .search-input, .mobile-toggle { backdrop-filter: none !important; } }
         @media (prefers-reduced-motion: reduce) {
             .ambient-orb,
             .component-box:hover::after,
@@ -1885,9 +1902,6 @@
             <div class="nav-divider">4. NORMAS & SEGURANÇA</div>
             <a href="#seguranca" class="nav-item"><i class="material-icons-round">verified_user</i> Segurança (NR-12)</a>
         </div>
-        <div class="sidebar-kwc">
-            <img src="imagens/logo-kwc.png" alt="KWC Industrial TECH">
-        </div>
     </nav>
 
     <main class="main-content">
@@ -1905,7 +1919,7 @@
                 </p>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Transportador%20Industrial%20Verde%20HUNTER.png" alt="Vista geral Esteira Arrastadora 50.1002" loading="lazy" decoding="async">
+                    <img src="imagens/Transportador%20Industrial%20Verde%20HUNTER.webp" alt="Vista geral Esteira Arrastadora 50.1002" fetchpriority="high" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR A VISÃO GERAL</div>
                 </div>
                 <p class="figure-caption">1. Visão Geral do Equipamento</p>
@@ -1940,7 +1954,7 @@
                 <h3>1.1 Descrição Geral — Módulo 1 (Tração)</h3>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/cabeceira%20de%20tra%C3%A7%C3%A3o.png" alt="Cabeceira de tração 50.1002" loading="lazy" decoding="async">
+                    <img src="imagens/cabeceira%20de%20tra%C3%A7%C3%A3o.webp" alt="Cabeceira de tração 50.1002" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">2. Cabeceira de tração (Módulo 1)</p>
@@ -1949,7 +1963,7 @@
                 </div>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/unitisador.png" alt="Unitizador de toras" loading="lazy" decoding="async">
+                    <img src="imagens/unitisador.webp" alt="Unitizador de toras" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">3. Unitizador de toras — 1 tora por vez</p>
@@ -1980,7 +1994,7 @@
                 <h3>1.4 Tensionamento — Módulo 2</h3>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Cabeceira%20tensionador.png" alt="Cabeceira tensionador 50.1002" loading="lazy" decoding="async">
+                    <img src="imagens/Cabeceira%20tensionador.webp" alt="Cabeceira tensionador 50.1002" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">4. Cabeceira tensionador (Módulo 2)</p>
@@ -1996,7 +2010,7 @@
                 <h3>1.5 Guias Laterais</h3>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Guias%20laterais%20de%20regulagens.png" alt="Guias laterais com regulagem" loading="lazy" decoding="async">
+                    <img src="imagens/Guias%20laterais%20de%20regulagens.webp" alt="Guias laterais com regulagem" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">5. Guias laterais — ajustadores de ângulo</p>
@@ -2006,7 +2020,7 @@
                 <h3>1.5.1 Guias / chapas de saída</h3>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Guias%20de%20caida.png" alt="Guias de saída" loading="lazy" decoding="async">
+                    <img src="imagens/Guias%20de%20caida.webp" alt="Guias de saída" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">5.1 Guias de saída — regulagem na descarga</p>
@@ -2016,7 +2030,7 @@
                 <h3>1.6 Tombadores e Sensores</h3>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Tombador.png" alt="Tombador 50.1002" loading="lazy" decoding="async">
+                    <img src="imagens/Tombador.webp" alt="Tombador 50.1002" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">6. Tombador — expulsão Linha 1 / Linha 2</p>
@@ -2027,7 +2041,7 @@
                 <h3>1.7 União dos Módulos</h3>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Uni%C3%A3o%20de%20modulos.png" alt="União de módulos" loading="lazy" decoding="async">
+                    <img src="imagens/Uni%C3%A3o%20de%20modulos.webp" alt="União de módulos" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">7. Base e contrabase de união (M20)</p>
@@ -2037,7 +2051,7 @@
                 <h3>1.8 Sapatas / Fixação ao Piso</h3>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Sapata.png" alt="Sapata / base pé" loading="lazy" decoding="async">
+                    <img src="imagens/Sapata.webp" alt="Sapata / base pé" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">8. Sapata — nivelamento e fixação</p>
@@ -2092,7 +2106,7 @@
                 <p>A esteira possui <strong>2 tombadores de toras</strong>. Abaixo, as peças de reposição de <strong>cada tombador</strong>:</p>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Tombador.png" alt="Tombador — peças de reposição" loading="lazy" decoding="async">
+                    <img src="imagens/Tombador.webp" alt="Tombador — peças de reposição" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">Kit de reposição do tombador</p>
@@ -2122,7 +2136,7 @@
                 <p>Sistema <strong>unitizador de toras</strong> na entrada (1 tora por vez). Peças de reposição do conjunto:</p>
                 
                 <div class="img-wrapper" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/unitisador.png" alt="Unitizador de toras" loading="lazy" decoding="async">
+                    <img src="imagens/unitisador.webp" alt="Unitizador de toras" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">Sistema unitizador — entrada</p>
@@ -2149,7 +2163,7 @@
                 <p>Peças de reposição da <strong>cabeceira tensionadora</strong> (Módulo 2):</p>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/Cabeceira%20tensionador.png" alt="Cabeceira tensionadora" loading="lazy" decoding="async">
+                    <img src="imagens/Cabeceira%20tensionador.webp" alt="Cabeceira tensionadora" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">Cabeceira tensionadora — peças de reposição</p>
@@ -2173,7 +2187,7 @@
                 <p>Peças de reposição da <strong>cabeceira de tração</strong> (Módulo 1):</p>
                 
                 <div class="img-wrapper img-size-60" onclick="openLightbox(this.querySelector('img'))">
-                    <img src="imagens/cabeceira%20de%20tra%C3%A7%C3%A3o.png" alt="Cabeceira de tração" loading="lazy" decoding="async">
+                    <img src="imagens/cabeceira%20de%20tra%C3%A7%C3%A3o.webp" alt="Cabeceira de tração" loading="lazy" decoding="async">
                     <div class="zoom-hint">CLIQUE PARA AMPLIAR</div>
                 </div>
                 <p class="figure-caption">Cabeceira de tração — peças de reposição</p>
@@ -2429,24 +2443,22 @@
                 <hr style="border: 0; border-top: 1px solid var(--border); margin: 50px 0;">
                 <div style="text-align: center; opacity: 0.85; font-size: 0.9rem;">
                     <p>Equipamento <strong>Hunter Engenharia</strong> · Código <strong>50.1002</strong></p>
-                    <p>Desenvolvido e executado por <strong>KWC Industrial TECH</strong>.</p>
                 </div>
             </section>
 
             <section id="qr-manual" style="margin-top: 50px; text-align: center;">
                 <h2><i class="material-icons-round">qr_code_2</i> Manual Digital — QR Code</h2>
-                <p style="max-width: 520px; margin: 0 auto 22px;">Escaneie o QR Code com a identidade KWC para abrir este manual no celular ou compartilhar o acesso.</p>
+                <p style="max-width: 520px; margin: 0 auto 22px;">Escaneie o QR Code para abrir este manual no celular ou compartilhar o acesso.</p>
                 <div style="display:inline-block; padding: 8px;">
                     <img src="imagens/qr-manual-kwc.png" alt="QR Code Manual Digital KWC 50.1002" style="width: min(320px, 85vw); height: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,255,102,0.12);">
                 </div>
                 <p style="margin-top: 14px; font-size: 0.85rem; opacity: 0.8;">
-                    <a href="https://kwctech.github.io/manual-50-1002-esteira-arrastadora/" target="_blank" style="color: var(--accent);">kwctech.github.io/manual-50-1002-esteira-arrastadora</a>
+                    <a href="https://kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora/" target="_blank" style="color: var(--accent);">kwcindustrialtech.github.io/manual-50-1002-esteira-arrastadora</a>
                 </p>
             </section>
 
             <footer style="margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-main); font-size: 0.85rem;">
                 <p><strong>Hunter Engenharia</strong> &copy; 2026</p>
-                <p style="font-size: 0.75rem; margin-top: 5px;">Desenvolvido e executado por: <strong>KWC Industrial TECH</strong></p>
                 <div style="margin-top: 25px; display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; align-items: center;">
                     <a href="tel:+5547999542756" style="color:var(--text-main); text-decoration:none; display:flex; align-items:center; gap:5px;">
                         <i class="material-icons-round" style="color:var(--accent);">call</i> Suporte Técnico Hunter
@@ -2455,23 +2467,13 @@
                         <i class="material-icons-round" style="color: var(--whatsapp);">chat</i>
                         <span style="color: var(--whatsapp); font-weight: bold;">WhatsApp Hunter: (47) 99954-2756</span>
                     </a>
-                    <a href="mailto:contato@kwcindustrial.com.br" style="color:var(--text-main); text-decoration:none; display:flex; align-items:center; gap:5px;">
-                        <i class="material-icons-round" style="color:var(--accent);">email</i> contato@kwcindustrial.com.br
-                    </a>
                 </div>
+                <div data-kwc-ficha></div>
             </footer>
         </div>
     </main>
 
-    <div id="backToTop" onclick="window.scrollTo(0,0)"><i class="material-icons-round">arrow_upward</i></div>
-    <div class="kwc-watermark" style="display:none;" aria-hidden="true">
-        <div class="kwc-watermark-dot"></div>
-        <span class="kwc-watermark-text">Desenvolvido por KWC Industrial TECH</span>
-    </div>
-    <div class="fixed-footer">
-        <span class="fixed-footer-text">Desenvolvido pela <strong>KWC Industrial TECH</strong></span>
-    </div>
-
+    <div id="backToTop"><i class="material-icons-round">arrow_upward</i></div>
     <script>
         function toggleMenu() {
             document.querySelector('.sidebar').classList.toggle('open');
@@ -2499,17 +2501,27 @@
             document.getElementById('lightbox-img').src = el.src;
             document.getElementById('lightbox').style.display = 'flex';
         }
-        window.addEventListener('scroll', function() {
-            let current = '';
-            document.querySelectorAll('section').forEach(section => {
-                if (scrollY >= section.offsetTop - 180) current = section.getAttribute('id');
-            });
-            document.querySelectorAll('.nav-item').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) link.classList.add('active');
-            });
-            document.getElementById('backToTop').classList.toggle('show', scrollY > 400);
-        });
+        const scroller = document.querySelector('.main-content');
+        const rolaJanela = getComputedStyle(scroller).overflowY === 'visible' || scroller.scrollHeight <= scroller.clientHeight;
+        const links = {};
+        document.querySelectorAll('.nav-item').forEach(l => { const id = (l.getAttribute('href')||'').slice(1); if (id) links[id] = l; });
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(es => es.forEach(e => {
+                if (e.isIntersecting && links[e.target.id]) {
+                    document.querySelectorAll('.nav-item.active').forEach(x => x.classList.remove('active'));
+                    links[e.target.id].classList.add('active');
+                }
+            }), { root: rolaJanela ? null : scroller, rootMargin: '-20% 0px -70% 0px' });
+            document.querySelectorAll('section[id]').forEach(sec => io.observe(sec));
+        }
+        const topo = document.getElementById('backToTop');
+        let pend = false;
+        const alvo = rolaJanela ? window : scroller;
+        alvo.addEventListener('scroll', () => {
+            if (pend) return; pend = true;
+            requestAnimationFrame(() => { topo.classList.toggle('show', (rolaJanela ? scrollY : scroller.scrollTop) > 400); pend = false; });
+        }, { passive: true });
+        topo.onclick = () => (rolaJanela ? window : scroller).scrollTo({ top: 0, behavior: 'smooth' });
         function searchManual() {
             let input = document.getElementById('searchInput').value.toLowerCase();
             let container = document.querySelector('.container');
